@@ -8,7 +8,7 @@ The sources were thought to be lost, until discovered from an old hard disk back
 
 ## Notes
 - :confused: For layout purposes `table` tags are used as was standard back in the early 2000s.
-- :unamused: Images were sliced to minimum widths and to enable faster parallel downloads as well as compressed jpegs.
+- :unamused: Images were sliced to minimum widths to enable faster parallel downloads as well as compressed jpegs.
 - :sweat_smile: Pixel units were used as well as inline styles, a lot
 - :cold_sweat: Designed for a screen size of 780px was norm 
 - :sunglasses: Originally titled "mhkonline revision version 3"
