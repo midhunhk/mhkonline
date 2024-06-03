@@ -23,4 +23,5 @@ a:hover {background-color:#CCFFFF;color:#9900CC;text-decoration:none;}
 .sideHdr{color:#9933FF;	font-size:13px;	font-weight:bold;padding-left:4px;}
 .moreBtn a{text-decoration:underline;color:#333333;font-size:11px;padding-left:20px;}
 .moreBtn a:hover{background-color:#FFFFFF;text-decoration:none;color:#9900FF;}
-.main-article{padding: 0 10px; font-size: 14px; line-height: 150%;}
+.main-article{padding: 10px; font-size: 14px; line-height: 150%;}
+.nav-tabs{cursor: pointer;}

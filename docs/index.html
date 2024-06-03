@@ -20,24 +20,48 @@
   <!--
   #Layer1{position:absolute;width:179px;height:19px;z-index:1;left:121px;top:316px;background-image:url(images/content_hdr.jpg);}
   -->
+  .banner{
+    background-color: teal;
+    color: aliceblue;
+    padding: 0.5em;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 0.5em;
+    border: 2px solid rgb(80, 20, 178);
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+  }
   </style>
 </head>
 <body>
   <div class="container bg-color">
     <div align="center"> 
-<!-- Site Search Using Google --> <!--
-  <form method="get" action="http://www.google.com/custom">
-	<input type="text" name="q" size="25" maxlength="255" value="" />
-	<input type="submit" name="btnG" value="Site Search" />
-    <input type="hidden" name="cof" value="L:site_logo.jpg;LW:124;LH:38;AH:center;GL:0;" />
-	<input type="hidden" name="domains" value="http://www.geocities.com/mhkonline2/" />
-	<input type="hidden" name="sitesearch" value="http://www.geocities.com/mhkonline2/"/>
-</form> 
--->
+    <!-- Site Search Using Google --> 
+    <!--
+      <form method="get" action="http://www.google.com/custom">
+      <input type="text" name="q" size="25" maxlength="255" value="" />
+      <input type="submit" name="btnG" value="Site Search" />
+        <input type="hidden" name="cof" value="L:site_logo.jpg;LW:124;LH:38;AH:center;GL:0;" />
+      <input type="hidden" name="domains" value="http://www.geocities.com/mhkonline2/" />
+      <input type="hidden" name="sitesearch" value="http://www.geocities.com/mhkonline2/"/>
+    </form> 
+    -->
 
-<!--
-<span class="nLink" style="position:absolute; left:65px; top:2px;"><a href="sitemap.html" title="Sitemap for this site">Sitemap</a></span>
--->
+    <!-- This banner is newly added in 2024 to provide information about the archival status of this website -->
+    <div class="banner">
+      <span>
+        <?xml version="1.0" ?><svg height="20px" version="1.1" viewBox="0 0 20 20" width="20px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#ffffff" id="Core" transform="translate(-86.000000, -296.000000)"><g id="info-outline" transform="translate(86.000000, 296.000000)"><path d="M9,15 L11,15 L11,9 L9,9 L9,15 L9,15 Z M10,0 C4.5,0 0,4.5 0,10 C0,15.5 4.5,20 10,20 C15.5,20 20,15.5 20,10 C20,4.5 15.5,0 10,0 L10,0 Z M10,18 C5.6,18 2,14.4 2,10 C2,5.6 5.6,2 10,2 C14.4,2 18,5.6 18,10 C18,14.4 14.4,18 10,18 L10,18 Z M9,7 L11,7 L11,5 L9,5 L9,7 L9,7 Z" id="Shape"/></g></g></g></svg>
+      </span>
+      <span>
+        This is an archived copy of this website from 2006, may have broken links or features and using outdated tech and patterns.
+      </span>
+    </div>
+
+    <!-- This link is removed in 2024 as the sitemap page no longer works since flash content is not supported as well as it is misplaced on this layout -->
+    <!--
+    <span class="nLink" style="position:absolute; left:65px; top:2px;"><a href="sitemap.html" title="Sitemap for this site">Sitemap</a></span>
+    -->
 
   <table border="0" cellpadding="0" cellspacing="0" width="780">
     <!-- SPACERS FOR ALIGNING -->
@@ -82,7 +106,7 @@
 
 
 	<!-- START OF MAIN NAVIGATION TABS -->
-    <tr>
+    <tr class="nav-tabs">
       <td><img name="index2_r3_c2" src="assets/spacer.gif" width="20" height="27" id="index2_r3_c2" alt="" /></td>
       <td>
 	  <img src="images/tab_home_s.jpg" alt="Home" name="tabn_home" width="114" height="27" id="tab_home" onclick="hideall();show('home');setImage(this.name,'images/tab_home_s.jpg');" /></td>
@@ -100,8 +124,8 @@
       <td><img src="assets/spacer.gif" width="1" height="27" alt="" /></td>
     </tr>
 
-	<!-- END OF NAVIGATION TABS-->
   </table>
+	<!-- END OF NAVIGATION TABS-->
 
   <!-- START OF SUBNAV -->
 <table width="750" bgcolor="#9999FF"  cellpadding="0" cellspacing="0" border="0" style="margin-top:10px">
@@ -111,7 +135,7 @@
       <div id="subNav" style="padding:10px">
 
         <DIV id=home style="DISPLAY: inline; margin-top:10px;">
-          <script language="javascript1.2">document.write(quotes[getRandNum(quotes.length-1)]);</script>
+          <script>document.write(quotes[getRandNum(quotes.length-1)]);</script>
         </DIV>
 
         <DIV id="ae" style="DISPLAY: none">

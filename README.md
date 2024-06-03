@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/midhunhk/mhkonline/main/source/graphics/site_icon.png" alt="icon" /> 
 An archived copy of my personal website created back in 2005-2006 and was hosted on GeoCities.com.  
 
-_It was a pain to upload few files at a time using file browser over dial up internet connection._
+_It was a pain to upload only few files at a time using file browser over dial up internet connection._
 
 The sources were thought to be lost, until discovered from an old hard disk backup. It is structured as microsites with each one having a different theme and layout.
 
@@ -21,8 +21,10 @@ Since the Flash player is no longer supported by modern browsers, for aesthetic 
 - Few design tweaks like margins and paddings are updated for modern standards
 - Some resources and paths have been re-organized
 
-## Screenshot
-![screenshot](/screenshots/mhkonline/v3-home-updated-2024.png)
+## Screenshots
+![screenshot](/screenshots/mhkonline/rev3/v3-home-updated-2024.png)  
+![screenshot](/screenshots/mhkonline/rev3/v3-downloads.png)  
+![screenshot](/screenshots/mhkonline/rev3/v3-solutions.png)  
 
 ## Original URL
 [https://www.geocities.com/mhkonline2/](https://www.geocities.com/mhkonline2/)
