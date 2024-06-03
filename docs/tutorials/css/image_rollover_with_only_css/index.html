@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="tutorials,flash,fireworks,c,c++,javascript,css,html,design" />
+<meta name="author" content="artistik expressionz" />
+<title>Mhkonline Tutorials :: CSS</title>
+<link href="../../../globalstyle.css" type="text/css" rel="stylesheet" />
+<script language="javascript1.2" src="../../../jslib.js"></script>
+<script language="javascript1.2" src="../../tuts_index.js"></script>
+<!-- change the sidebarnav & tablebg colors for  each section -->
+<style type="text/css"><!-- .tuts_sidebar a, a.tuts_sidebar:visited {background:#67fe33;} .tablebg{ background:#67fe33;}
+.nav a{display:block;background-image:url(nav_norm.jpg);background-repeat:no-repeat;border:0px;clear:both;margin-bottom:0px;margin-left:2px;margin-right:2px;text-align:center;width:95px;height:95px; text-decoration:none;color:#FFFFFF; font-weight:bold;}
+.nav a:hover{display:inherit;background-image:url(nav_over.jpg);background-repeat:inherit; color:#FF0033;}
+--></style>
+</head>
+<body onload="simplePreload('nav_over.jpg'); ">
+<!-- START OF HEADER -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="272"><img src="../../tuts_hdr_lft.jpg" alt="Tutorials at Mhkonline" width="272" height="50" /></td>
+    <td width="140" class="tablebg"><img src="../../tuts_hdr_css.jpg" alt="Css" width="127" height="50" /></td>
+    <td width="598" class="tablebg"><span style="position:absolute; top:19px; width: 268px;">
+    <h4>Cascading Style Sheet </h4>
+    </span></td>
+  </tr>
+  <tr bgcolor="#e4e4e4"><!-- Breadcrumb Site Navigation -->
+    <td colspan="3" bgcolor="#FBF7F8"><span class="breadCrumb"><a href="../../../index2.html"> Home </a> &#149; <a href="../../../ae/index.html"> ae </a> &#149;<a href="../../../downloads/index.html"> Downloads </a> &#149;<a href="../../../solutions/index.html">Solutions </a> &#149;<a href="../../index.html">Tutorials </a> &#149;<a href="../../../info/index.html"> Info</a> &#149;<a href="../../list_all_tutorials.html"> All Tutorials </a></span></td>
+  </tr>
+</table>
+<!-- END OF HEADER -->
+<table width="780" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="150" valign="top" bgcolor="#9999ff"><img src="../../sidebar_top.jpg" width="151" height="12" />
+      <span class="sub_header">Tutorials Navigation</span>
+      <p class="tuts_sidebar"><a href="../../c_cpp/index.html">C C++</a><br />
+      <a href="../index.html">Css</a><br />
+      <a href="../../flash/index.html">Flash</a><br />
+      <a href="../../fworks/index.html">Fireworks</a><br />
+      <a href="../../javascript/index.html">Javascript      </a></p>
+	  <p><img src="../../sidebar_btm.jpg" width="151" height="12" /><img src="../../sidebar_top.jpg" width="151" height="12" />
+	      <span class="sub_header">Random Tutorials</span> <br />
+	      <br />
+      </p>
+	  <div id="randTutsBox">
+        <script language="JavaScript1.2" type="text/javascript">
+			<!--
+			var r = getRandNum(tuts_list.length-1);
+			d.write('<h4>' + tuts_list[r].sectionName + '</h4>');
+			d.write(tuts_list[r].titleName);
+			d.write('<br><span class=tutsLink><a href=' +  tutsRoot + tuts_list[r].linkVal + '>more...</a></span>');
+			-->
+      </script>
+      </div>
+    </td>
+    <td width="630" rowspan="3" valign="top"><div id="tuts_content" style="padding-left:6px">
+      <h3>Image Rollover using Only Css </h3>
+        <div align="center">
+          <table width="326" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="163" bgcolor="#9900FF" class="footer"><div align="center">Application</div></td>
+              <td width="163" class="tablebg"><div align="center">Notepad to Dreamweaver </div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">Difficulty</div></td>
+              <td class="tablebg"><div align="center">Intermediate</div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">Date Added </div></td>
+              <td class="tablebg"><div align="center">16 Aug 2006 </div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">AutoRating(out of 5) </div></td>
+              <td class="tablebg"><div align="center">****</div></td>
+            </tr>
+          </table>
+        </div>
+        <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are going to make this. </p>
+		<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;First of all, you have to create two images of same dimensions for the rollover and normal states of the buttons. You can choose any size, color or program to create it, just that they should both be having same dimensions. We chose two images of size 95 X 95 with a black background. You can use the images that we use here.<span class="breadCrumb"> <a href="nav_norm.jpg" target="_blank">Normal</a> <a href="nav_over.jpg" target="_blank">Over</a> </span>Right click and press 'Save Target As'. </p>
+        <table width="100" border="0" bgcolor="#000000">
+          <tr>
+            <td class="nav"><a href="#"><br /><br />Link 1 <br /></a></td>
+            <td class="nav"><a href="#"><br /><br />Link 2 <br /></a></td>			
+            <td class="nav"><a href="#"><br /><br />Link 3 <br /></a></td>
+            <td class="nav"><a href="#"><br /><br />Link 4 <br /></a></td>
+            <td class="nav"><a href="#"><br /><br />Link 5 <br /></a></td>
+            <td class="nav"><a href="#"><br /><br />Link 6 <br /></a></td>						
+          </tr>
+        </table>
+        <p align="justify">This is the CSS code. Paste it in the &lt;HEAD&gt; section between &lt;STYLE type=&quot;text/css&quot;&gt; &amp; &lt;/STYLE&gt; tags. </p>
+        <table width="90%" border="1" cellspacing="0" cellpadding="0" class="code_outerBorder">
+      <tr>
+        <td class="code_inner"><p>.nav a{<br />
+display:block;<br />
+background-image:url(nav_norm.jpg);<br />
+background-repeat:no-repeat;<br />
+border:0px;<br />
+clear:both;<br />
+margin-bottom:0px;<br />
+margin-left:2px;<br />
+margin-right:2px;<br />
+text-align:center;<br />
+width:95px;<br />
+height:95px;<br />
+}<br />
+.nav a:hover{<br />
+display:inherit;<br />
+background-image:url(nav_over.jpg);<br />
+background-repeat:inherit;<br />
+}</p>
+          </td>
+      </tr>
+    </table>    
+        <p align="justify">This type of links are usually used in a navigation bar. So create a table because, the link text has to be almost the same size as the image. Also if you want to use a number of such links horizontally, a table is more suitable. The table code should look like this.</p>
+        <table width="90%" border="1" cellspacing="0" cellpadding="0" class="code_outerBorder">
+          <tr>
+            <td class="code_inner" style="font-size:14px;"><p> &lt;table width=&quot;100&quot; border=&quot;0&quot; bgcolor=&quot;#000000&quot;&gt;<br />
+&lt;tr&gt;<br />
+&lt;td class=&quot;nav&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;br /&gt;&lt;br /&gt;Link 1 &lt;br /&gt;&lt;/a&gt;&lt;/td&gt;<br />
+&lt;td class=&quot;nav&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;br /&gt;&lt;br /&gt;Link 2 &lt;br /&gt;&lt;/a&gt;&lt;/td&gt; <br />
+&lt;td class=&quot;nav&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;br /&gt;&lt;br /&gt;Link 3 &lt;br /&gt;&lt;/a&gt;&lt;/td&gt;<br />
+&lt;td class=&quot;nav&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;br /&gt;&lt;br /&gt;Link 4 &lt;br /&gt;&lt;/a&gt;&lt;/td&gt;<br />
+&lt;td class=&quot;nav&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;br /&gt;&lt;br /&gt;Link 5 &lt;br /&gt;&lt;/a&gt;&lt;/td&gt;<br />
+&lt;td class=&quot;nav&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;br /&gt;&lt;br /&gt;Link 6 &lt;br /&gt;&lt;/a&gt;&lt;/td&gt; <br />
+&lt;/tr&gt;<br />
+&lt;/table&gt;</p></td>
+          </tr>
+        </table>
+        <p align="justify">That is it. no messy javascript, and with just two images you can create any number of rollovers. </p>
+    </div></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><img src="../../sidebar_btm.jpg" width="151" height="12" /></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#ffffff"><img src="../../../spacer.gif" width="20" height="500" /></td>
+  </tr>
+</table>
+<br />
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#9933FF" height="40">
+  <tr height="5">
+    <td class="tablebg"></td>
+  </tr>
+  <tr height="35">
+    <td align="center" valign="top"><div class="footer">| &copy; 2006 Artistik Expressionz. Contact Information available under <a href="#">info</a>.<br />
+    </div></td>
+  </tr>
+</table>
+</body>
+</html>

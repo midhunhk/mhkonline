@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="tutorials,flash,fireworks,c,c++,javascript,css,html,design" />
+<meta name="author" content="artistik expressionz" />
+<title>Mhkonline Tutorials :: Flash :: Circular Clockwise Animation using Masks</title>
+<link href="../../../globalstyle.css" type="text/css" rel="stylesheet" />
+<script language="javascript1.2" src="../../../jslib.js"></script>
+<script language="javascript1.2" src="../../tuts_index.js"></script>
+<!-- change the sidebarnav & tablebg colors for  each section -->
+<style type="text/css"><!-- .tuts_sidebar a, a.tuts_sidebar:visited {background:#f28885;} .tablebg{ background:#f28885;}--></style>
+</head>
+<body>
+<!-- START OF HEADER -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="272"><img src="../../tuts_hdr_lft.jpg" alt="Tutorials at Mhkonline" width="272" height="50" /></td>
+    <td width="140" class="tablebg"><img src="../../tuts_hdr_flash.jpg" alt="Index" width="127" height="50" /></td>
+    <td width="598" class="tablebg"><span style="position:absolute; top:19px; width: 268px;">
+    <h4>Flash Tutorials </h4>
+    </span></td>
+  </tr>
+  <tr bgcolor="#e4e4e4"><!-- Breadcrumb Site Navigation -->
+    <td colspan="3" bgcolor="#FBF7F8"><span class="breadCrumb"><a href="../../../index2.html">Home </a> &#149; <a href="../../../ae/index.html"> ae </a> &#149;<a href="../../../downloads/index.html"> Downloads </a> &#149;<a href="../../../solutions/index.html">Solutions </a> &#149;<a href="../../index.html">Tutorials </a> &#149;<a href="../../../info/index.html"> Info &#149;</a><a href="../../list_all_tutorials.html"> All Tutorials</a></span></td>
+  </tr>
+</table>
+<!-- END OF HEADER -->
+<table width="780" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="150" valign="top" bgcolor="#ffffff"></p></td>
+    <td width="630" rowspan="3" valign="top"><div id="tcontent" style="padding:6px"><h3>Circular 
+    Clockwise Animation using Masks </h3>
+        <p align="justify"><div align="center">
+          <table width="380" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="169" bgcolor="#9900FF" class="footer"><div align="center">Application</div></td>
+              <td width="211" class="tablebg"><div align="center">Macromedia Flash MX 2004 +  </div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">Difficulty</div></td>
+              <td class="tablebg"><div align="center">Advanced</div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">Date Added </div></td>
+              <td class="tablebg"><div align="center">22 Aug 2006 </div></td>
+            </tr>
+			            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">Source Files </div></td>
+              <td class="tablebg"><div align="center" class="footer"><a href="circular_animation.zip" title="The sources used in this tutorial" target="_blank">Fla and Png </a></div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">AutoRating(out of 5) </div></td>
+              <td class="tablebg"><div align="center">*****</div></td>
+            </tr>
+          </table>
+        </div> </p>
+        <p align="justify">This tutorials will tell you how to make a circular animation like this for yourself.</p>
+        <p align="center">
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="300" height="200">
+            <param name="movie" value="circular_anim.swf" />
+            <param name="quality" value="high" />
+            <embed src="circular_anim.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="300" height="200"></embed>
+          </object>
+        </p>
+        <p align="justify"><span class="tablebg">First</span> of all you may want to download the source files, incase you require reference. Download the files by clicking<span class="tutsLink"> <a href="circular_animation.zip" target="_blank">here</a></span>. The Png files are for one the glowing sphere and the other half of the glow of a black circle with same radius as the sphere. We used 178 X 178 pixels for dimensions. </p>
+        <p align="justify">Note that you can create these images even in Flash. Follow the instructions for 'Glowing Sphere 1' in the Fireworks section to make the 3D sphere in Flash. But creating the outer glow would be difficult if you are not using Flash 8. You can easily apply a glow to a movie clip using Flash 8. To create the glow in older versions of flash you would have to convert half a circle (with fill color set to none, line color to some grey) to a fill '<span class="appCmd">Modify -&gt; Shape -&gt; Convert Lines To Fills</span>' and then select that fill and press '<span class="appCmd">Modify -&gt; Shape -&gt; Soften Fill Edges</span>' and create an outer glow in that way.<br />
+          <br />
+          Import the two images into Flash and convert them into Graphics. To do this either click an image and press '<span class="appCmd">F8</span>' or press ' <span class="appCmd">Modify -&gt; Convert to Symbol</span>'. Create a new Movie Clip by '<span class="appCmd">Insert -&gt; New Symbol</span>' and paste the glow_half graphic onto the scene. In the properties manager, give X and Y co-ordinates as 0. Copy that image and paste it in place '<span class="appCmd">Ctrl + Shift +W</span>' or '<span class="appCmd">Edit -&gt; Paste In Place</span>'. With the pasted graphic selected, rotate it 180 degrees '<span class="appCmd">Ctrl + Shift + S</span>' or '<span class="appCmd">Modify -&gt; Transform -&gt; Scale And transform</span>'. Put scale as 100% and rotation as 180. Now select this graphic and put X = 89, Y = 0 in the Properties Manager. You should get something like this.</p>
+        <p align="justify">        <img src="img01.jpg" alt="lowermost layer" width="309" height="208" /><br />
+        This frame would be the lowermost frame and the outer glow will show as a border.<br />
+          Now lets create the <span class="appCmd">Circular animation</span> for the half rotation. Create a new layer and paste the Glowing sphere here, put its X and Y co-ordinates to 0. This layer will be masked by a semicircle. Create another layer and draw a circle with any fill color and no border color. Select it and give it the dimensions 178 X 178 and X and Y co-ordinates as 0. Now using the Selection Tool(V) select almost half of this image and press Delete. The finished semicircle should be 89 pixels Wide and 178 pixels High. You may have to work on this until you get it to these dimensions. </p>
+        <p align="justify"><img src="img04.jpg" alt="rotator" width="299" height="199" /><br />
+        Once you get it as shown above, select it and convert it into a Graphic. We named it 'Rotator'. Select Frame 25 in this Layer and create a keyframe, '<span class="appCmd">F6</span>' or '<span class="appCmd">Insert -&gt; Timeline -&gt; Keyframe</span>'. Select the Rotator and rotate it 90 degrees. Select Frame 50 and create another keyframe. Rotate the Rotator a further 90 degrees on this frame. </p>
+        <p align="justify"><img src="img05.jpg" alt="Scale and Rotate 90 degrees" width="499" height="262" /><br />
+        Right click on any frame between 1 and 25 and select '<span class="appCmd">Create Motion Tween</span>'. Apply this to the frames between 25 and 50 in this way also. Now right click the name of this layer and click '<span class="appCmd">Mask</span>' to make this layer mask the underlying layer, which contains the glowing sphere. The timeline should look like this.</p>
+        <p align="justify"><img src="img02.jpg" alt="the timeline" width="236" height="98" /><br />
+        Now there is a problem if you Test the movie, half of the sphere always shows. So Select the glow graphic on the left in the lowermost layer, copy it create a new layer above the masker_50 layer and '<span class="appCmd">Paste in Place</span>'. Now the left portion of the animation is hidden and we are half way through our task. Now copy and paste the 'glowing_sphere' graphic from the 2nd layer and ' <span class="appCmd">Paste it in Place</span>' in the hide_half layer on the 50the frame. Now right click on it and select '<span class="appCmd">Arrange -&gt; Send to Back</span>'. This would show right-half of the glowing sphere grahic and just the glow on the left half side. <br />
+        Now create two more layers above this layer Select the 50<sup>th</sup> frames and insert <span class="appCmd">Keyframes</span>. Copy up the 'glowing_sphere' graphic and paste it in place into the layer above 'hide_half' layer. <br />
+        <br />
+        Repeat the process of creating the circular mask on the left half of the 'glowing_sphere' graphic. Mask it and in the end, the timeline should look like this.</p>
+        <p align="justify"><img src="img07.jpg" alt="The final Timeline" width="776" height="115" /><br />
+        We used a movie clip because it enables us to position the animation however we like and copy and use it in another file or something. Now come back to Scene 1. Since we created the animation for 100 frames, drag the movie clip animation on to the scene from the library if it s not already there. Now press '<span class="appCmd">Ctrl + Enter</span>' or '<span class="appCmd">Control -&gt; Test Movie</span>' to play the movie. </p>
+    </div></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF">
+	  <table width="150" border="0" cellpadding="0" cellspacing="0" bgcolor="#9999ff">
+        <tr>
+          <td><img src="../../sidebar_top.jpg" width="151" height="12" /></td>
+        </tr>
+        <tr>
+          <td><span class="sub_header">Tutorials Navigation</span>
+              <p class="tuts_sidebar"><a href="../../c_cpp/index.html">C C++</a><br />
+                  <a href="../../css/index.html">Css</a><br />
+                  <a href="../../flash/index.html">Flash</a><br />
+                  <a href="../index.html">Fireworks</a><br />
+              <a href="../../javascript/index.html">Javascript </a></p></td>
+        </tr>
+        <tr>
+          <td><br />
+              <img src="../../sidebar_btm.jpg" width="151" height="12" /></td>
+        </tr>
+      </table>
+	  <table width="150" border="0" cellpadding="0" cellspacing="0" bgcolor="#9999FF">
+        <tr>
+          <td><img src="../../sidebar_top.jpg" width="151" height="12" /></td>
+        </tr>
+        <tr>
+          <td><span class="sub_header">Random Tutorials</span>
+              <div id="randTutsBox">
+                <script language="JavaScript1.2" type="text/javascript">
+<!--
+var r = getRandNum(tuts_list.length-1);
+d.write('<h4>' + tuts_list[r].sectionName + '</h4>');
+d.write(tuts_list[r].titleName);
+d.write('<span class=tutsLink><a href=' +  tutsRoot + tuts_list[r].linkVal + '>more...</a></span>');
+-->
+        </script>
+              </div>
+</td>
+        </tr>
+        <tr>
+          <td><img src="../../sidebar_btm.jpg" width="151" height="12" /></td>
+        </tr>
+    </table>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#ffffff">&nbsp;</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#9933FF" height="40">
+  <tr height="5">
+    <td class="tablebg"></td>
+  </tr>
+  <tr height="35">
+    <td align="center" valign="top"><div class="footer">| &copy; 2006 Artistik Expressionz. Contact Information available under <a href="#">info</a>.<br />
+    </div></td>
+  </tr>
+</table>
+</body>
+</html>

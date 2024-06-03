@@ -1,0 +1,23 @@
+/* CSS Document */
+body{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	margin-top:0px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:2px;
+}
+h1{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:28px;
+}
+a{
+	color:#999999;
+	text-decoration:none;
+	display:compact;
+}
+a:hover{
+	color:#00CC00;
+	text-decoration:underline;
+	display:inherit;
+}

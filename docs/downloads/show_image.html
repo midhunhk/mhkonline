@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Show Wallpaper :: Mhkonline -> Downloads&nbsp;&nbsp;</title>
+<link href="../assets/globalstyle.css" type="text/css" rel="stylesheet" />
+<script language="javascript1.2" src="walls_index.js"></script>
+<script language="javascript1.2">
+function init()
+{	//	loads the content Div with the page 
+	var srch = location.search;
+	var page_name;
+	if(srch){
+	img_name = srch.substr(1);	
+	fileDispName = img_name.substring(0,img_name.length-4);
+	daImage.src=downRoot+img_name;document.title += fileDispName;}
+	else	daImage.src=downRoot+'mhkonline_v3_header.jpg';
+}
+</script>
+</head>
+<body onLoad="init();">
+</head>
+
+<body>
+	<div class="container" style="background-color: inherit;">
+		<h3>Image / Wallpaper</h3>
+		<p>Right click on the image and click 'set as Background' to set the image as your desktop background or 'Save Picture As...' to save the image. </p>
+		<p><img src="#" name="daImage" alt="An Image or Wallpaper at Mhkonline"/></p>
+		<p align="center">&copy; 2006 Centrum inc Software Solutions, Artistik Expressionz </p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="tutorials,flash,fireworks,c,c++,javascript,css,html,design" />
+<meta name="author" content="artistik expressionz" />
+<title>Mhkonline Tutorials :: C C++ Tutorials -> Structures and Unions </title>
+<link href="../../../assets/globalstyle.css" type="text/css" rel="stylesheet" />
+<script language="javascript1.2" src="../../../assets/jslib.js"></script>
+<script language="javascript1.2" src="../../tuts_index.js"></script>
+<!-- change the sidebarnav & tablebg colors for  each section -->
+<style type="text/css"><!-- .tuts_sidebar a, a.tuts_sidebar:visited {background:#6699cc;} .tablebg{ background:#6699cc;}--></style>
+</head>
+<body>
+<div class="container">
+  <!-- START OF HEADER -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="272"><img src="../../tuts_hdr_lft.jpg" alt="Tutorials at Mhkonline" width="272" height="50" /></td>
+    <td width="140" class="tablebg"><img src="../../tuts_hdr_ccpp.jpg" alt="Index" width="127" height="50" /></td>
+    <td width="598" class="tablebg"><span style="position:absolute; top:19px; width: 268px;">
+    </span></td>
+  </tr>
+  <tr bgcolor="#e4e4e4"><!-- Breadcrumb Site Navigation -->
+    <td colspan="3" bgcolor="#FBF7F8"><div class="breadCrumb"><a href="../../../index2.html">Home </a> &#149; <a href="../../../ae/index.html"> ae </a> &#149;<a href="../../../downloads/index.html"> Downloads </a> &#149;<a href="../../../solutions/index.html">Solutions </a> &#149;<a href="../../index.html">Tutorials </a> &#149;<a href="../../../info/index.html"> Info</a> &#149;<a href="../../list_all_tutorials.html"> All Tutorials </a></a></div></td>
+  </tr>
+</table>
+<!-- END OF HEADER -->
+<table width="780" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="150" valign="top" bgcolor="#9999ff"><img src="../../sidebar_top.jpg" width="151" height="12" />
+      <span class="sub_header">Tutorials Navigation</span>
+      <p class="tuts_sidebar"><a href="../index.html">C C++</a><br />
+      <a href="../../css/index.html">Css</a><br />
+      <a href="../../flash/index.html">Flash</a><br />
+      <a href="../../fworks/index.html">Fireworks</a><br />
+      <a href="../../javascript/index.html">Javascript      </a></p>
+	  <p><img src="../../sidebar_btm.jpg" width="151" height="12" /><img src="../../sidebar_top.jpg" width="151" height="12" />
+	      <span class="sub_header">Random Tutorials</span>
+<div id="randTutsBox">		  
+<script language="javascript1.2">
+<!--
+var r = getRandNum(tuts_list.length-1);
+d.write('<h4>' + tuts_list[r].sectionName + '</h4>');
+d.write(tuts_list[r].titleName);
+d.write('<span class=tutsLink><a href=' +  tutsRoot + tuts_list[r].linkVal + '>more...</a></span>');
+-->
+</script></div>
+    </p></td>
+    <td width="630" rowspan="3" valign="top"><div id="tuts_content" style="padding-left:6px">
+      <h3>Searching Algorithms \ Techniques </h3>
+      <div align="center">
+          <table width="326" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="163" bgcolor="#9900FF" class="footer"><div align="center">Programming Language </div></td>
+              <td width="163" class="tablebg"><div align="center">C</div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">Difficulty</div></td>
+              <td class="tablebg"><div align="center">Beginner</div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">Date Added </div></td>
+              <td class="tablebg"><div align="center">31 Jan 2007</div></td>
+            </tr>         
+          </table>
+        </div>&nbsp; </p>
+        <h4 align="justify">Introduction</h4>
+        <p align="justify">&nbsp; The most commonly used searching techniques for arrays are the linear search and binary search algorithms. Here we will have a look at both of them. The aim of a searching algorithm is to find the element to be found is located. If it cannot be located the search is said to be unsuccessful.</p>
+        <p align="justify" class="sub_header">1. Linear Search  </p>
+        <p align="justify">&nbsp; This is the simplest method of searching. The element to be found is consecutively looked up in the list. The advantage is that it can be applied to an unsorted array. If the length of the array becomes large, this algorithm's performance will decrease. On average, it has to compare <strong>(n/2)</strong> elements if the array has n elements. If the element is absent, it can be known only after checking all the n elements. </p>
+        <p align="center">
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="580" height="120" title="Linear Search">
+            <param name="movie" value="linear_search.swf" />
+            <param name="quality" value="high" />
+            <embed src="linear_search.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="580" height="120"></embed>
+          </object>
+        </p>
+        <p align="justify">You can use the animation above to understand the simple function of linear search. We will give the function to perform the linear search. The user must be able to write the main function for reading the arrays and calling this function.</p>
+        <div class="code_inner">/* Linear Search Function<br />
+          Centrum inc Software Solutions | Jan 2007<br />
+          input : array, array size, element to look for<br />
+          returns : posn of key, if not found, returns -1
+          <br />*/<br /><br />
+          int linear_search(int a[], int size, int key) <br />
+          {<br />
+		  &nbsp;&nbsp;&nbsp;&nbsp;int i, pos = -1; // loop variable and initial posn<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;for(i = 0; i &lt; size; i++)<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;{<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(a[i] == key)<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pos = i;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+	    &nbsp;&nbsp;&nbsp;&nbsp;return (posn);<br />}</div>
+        <p class="sub_header">2. Binary Search</p>
+        <p align="justify">&nbsp;&nbsp;This is a more advanced searching algorithm. It is very fast and efficient. But it requires that the array be sorted before it can perform searching. </p>
+        <p align="justify">&nbsp;&nbsp;The first thing you should know is to keep track of three variables, low, mid and high. Here instead of comparing each element with the key element, we just compare the key element with the element in the middle of the sorted array. If it matches, the search is uccessful else the list is divided into two subparts. If the key element is smaller than the middle element, it should be in the first part else in the second part. The list to search has now halved.</p>
+        <p align="justify">&nbsp;&nbsp;Searching continues in either of the two halves by comparing the key element with the middle value each time until either the element is found or till there is only one element in a half.</p>
+        <p align="justify">&nbsp;&nbsp;The maximum no of comparisons in binary search is <strong>log<sub>2</sub> n</strong>.  </p>
+        <p align="center">
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="600" height="140" title="Binary Search">
+            <param name="movie" value="binary_search.swf" />
+            <param name="quality" value="high" />
+            <embed src="binary_search.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="600" height="140"></embed>
+          </object>
+        </p>
+        <div align="justify" class="code_inner">
+   /* Binary Search Function <br />
+   &nbsp;* Centrum inc Software Solutions | Jan 2007 <br />
+   &nbsp;* input : sorted array, array size, key element<br />
+   &nbsp;* returns : posn of the key element if found, else returns -1 <br />
+   &nbsp;*/
+          <p>int binary_search(int a[], int size, int key)<br />
+            {<br />
+            /* it is assumed that the given array is sorted, else code for sorting coz this section deals with searching only*/<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;int pos = -1, low = 0, high = size -1, mid; // variables for binary search    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;while ( low &lt; high)<br />
+           &nbsp;&nbsp;&nbsp;{<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mid = (low + high) /2;<br />
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ( a[mid] == key ) // element found<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ pos = mid; break; }<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else if ( arr[mid] &gt; key )<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;upper = mid - 1;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lower = mid + 1;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;return (pos); <br />
+          }</p>
+        </div>
+<p class=sub_header>Comparison of Linear Search and Binary Search</p>
+        <p align="justify">&nbsp; Suppose we have an array 1,2,3,9,11,13,17,25,57,90. If we want to search 25 in this set, the number of comparisons needed would be <br><blockquote>Linear Search : 8<br>Binary Search : 3</blockquote>&nbsp; Thus it is clear that Binary Searching is fastre and more efficient. The main advantage is that after each iteration it reduces the number of elements to be searched from n to n/2. On the other hand, linear search checks sequentially for every element, making it inefficient.<br><br>&nbsp; The disadvantage of binary search is that it only works on a sorted array or list. If we have to search an unsorted array, we would be forced to use linear search.</p>
+    </div></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><img src="../../sidebar_btm.jpg" width="151" height="12" /></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#ffffff"><img src="../../../spacer.gif" width="1" height="500" /></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#9933FF" height="40">
+  <tr height="5">
+    <td class="tablebg"></td>
+  </tr>
+  <tr height="35">
+    <td align="center" valign="top"><div class="footer">| &copy; 2006 Artistik Expressionz. Contact Information available under <a href="../../../info/index.html">info</a>.<br />
+    </div></td>
+  </tr>
+</table>  
+</div>
+</body>
+</html>

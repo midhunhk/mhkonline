@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="tutorials,flash,fireworks,c,c++,javascript,css,html,design" />
+<meta name="author" content="artistik expressionz" />
+<title>Mhkonline Tutorials :: C-C++ :: Programs :: Get Day</title>
+<link href="../../../assets/globalstyle.css" type="text/css" rel="stylesheet" />
+<script language="javascript1.2" src="../../../jslib.js"></script>
+<script language="javascript1.2" src="../../tuts_index.js"></script>
+<!-- change the sidebarnav & tablebg colors for  each section -->
+<style type="text/css"><!-- .tuts_sidebar a, a.tuts_sidebar:visited {background:#6699cc;} .tablebg{ background:#6699cc;}--></style>
+</head>
+<body>
+<div class="container">
+  <!-- START OF HEADER -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="272"><img src="../../tuts_hdr_lft.jpg" alt="Tutorials at Mhkonline" width="272" height="50" /></td>
+    <td width="140" class="tablebg"><img src="../../tuts_hdr_ccpp.jpg" alt="Index" width="127" height="50" /></td>
+    <td width="598" class="tablebg"><span style="position:absolute; top:19px; width: 268px;">
+    </span></td>
+  </tr>
+  <tr bgcolor="#e4e4e4"><!-- Breadcrumb Site Navigation -->
+    <td colspan="3" bgcolor="#FBF7F8"><div class="breadCrumb"><a href="../../../index.html">Home </a> &#149; <a href="../../../ae/index.html"> ae </a> &#149;<a href="../../../downloads/index.html"> Downloads </a> &#149;<a href="../../../solutions/index.html">Solutions </a> &#149;<a href="../../index.html">Tutorials </a> &#149;<a href="../../../info/index.html"> Info</a> &#149;<a href="../../list_all_tutorials.html"> All Tutorials </a></a></div></td>
+  </tr>
+</table>
+<!-- END OF HEADER -->
+<table width="780" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="150" valign="top" bgcolor="#9999ff"><img src="../../sidebar_top.jpg" width="151" height="12" />
+      <span class="sub_header">Tutorials Navigation</span>
+      <p class="tuts_sidebar"><a href="../index.html">C C++</a><br />
+      <a href="../../css/index.html">Css</a><br />
+      <a href="../../flash/index.html">Flash</a><br />
+      <a href="../../fworks/index.html">Fireworks</a><br />
+      <a href="../../javascript/index.html">Javascript      </a></p>
+	  <p><img src="../../sidebar_btm.jpg" width="151" height="12" /><img src="../../sidebar_top.jpg" width="151" height="12" />
+	      <span class="sub_header">Random Tutorials</span>
+<div id="randTutsBox">		  
+<script language="javascript1.2">
+<!--
+var r = getRandNum(tuts_list.length-1);
+d.write('<h4>' + tuts_list[r].sectionName + '</h4>');
+d.write(tuts_list[r].titleName);
+d.write('<span class=tutsLink><a href=' +  tutsRoot + tuts_list[r].linkVal + '>more...</a></span>');
+-->
+</script></div>
+    </p></td>
+    <td width="630" rowspan="3" valign="top"><div id="tuts_content" style="padding-left:6px">
+      <h3>Get The Day </h3>
+      <p><div align="center">
+          <table width="326" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="163" bgcolor="#9900FF" class="footer"><div align="center">Programming Language </div></td>
+              <td width="163" class="tablebg"><div align="center">C</div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">Difficulty</div></td>
+              <td class="tablebg"><div align="center">Intermediate</div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">Date Added </div></td>
+              <td class="tablebg"><div align="center">30 Sep 2006 </div></td>
+            </tr>         
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">AutoRating(out of 5) </div></td>
+              <td class="tablebg"><div align="center">***</div></td>
+            </tr>
+          </table>
+        </div>&nbsp; </p>
+      <p align="justify" class="sub_header">Description </p>
+      <p align="justify">&nbsp;There are a number of ways to calculate what day a given day will be. Here we are using the Julian method. We have also provided an implementation tutorial for this program using Javascript. The web centered program might have more use and portability but Intermediate C programmers would be able to understand this program with ease. </p>
+      <p align="justify">&nbsp;&nbsp;The theory behind this is that we consider January 1<sup>st</sup> of every year to be Julian Day 1. December 31<sup>st</sup> will be Julian day 366 for a leap year and 365 for other years. We first find out the Julian day corresponding to the day in question. We calculate the day number using the equation</p>
+      <p align="center" class="code_inner">( julian_day + year + fours - hundreds + four_hundreds)%7</p>
+      <p align="justify">where (each of these are integers)</p>
+      <p align="justify" class="code_inner">year = the year in question<br />
+        fours=(year-1)/4<br />
+        hundreds = (year-1)/100<br />
+        four_hundreds = (year-1)/400</p>
+      <p align="justify">&nbsp;&nbsp;The result of the equation will be a whole number between 0 and 6. If it is 0, the day in question is a Saturday. if it is 1, Sunday and so on. Identifying this and getting the equivalent day is an easy programming task. The program code is given below.</p>
+      <p align="justify" class="code_inner">
+/*     Author : Midhun Harikumar - 21 03 2006<br />
+        * 	midhunhk@gmail.com<br />
+        *	http://www.geocities.com/mhkonline2/<br />
+        *==== Program that calculates the day of a given date ==== <br />
+        *      Version 1.1 	(C)2006 Centrum inc Software Solutions
+        */<br />
+        <br />
+        # include &lt;stdio.h&gt;<br />
+        # include &lt;conio.h&gt;
+        <br />
+        <br />int getdays(int is_leap,int month,int daynum);<br />
+        int main(void)<br />
+        {<br />
+        clrscr();<br />
+        int is_leap=0,year,julian_day,fours,hundreds,four_hundreds;<br />
+        int u_yr,u_m,u_d,da_day;<br />
+        printf(&quot;\nEnter a date and I will tell u what day it is...&quot;);<br />
+        <br />
+        printf(&quot;\n\n\nEnter the date (dd - mm - yyyy) ...&quot;);<br />
+        scanf(&quot;%d %d %d&quot;,&amp;u_d,&amp;u_m,&amp;u_yr);<br />
+        <br />
+        if((u_yr%4 == 0)&amp;&amp;(u_yr%100 != 0)||(u_yr%400 == 0))<br />
+        is_leap = 1;<br />
+        <br />
+        julian_day 	= getdays(is_leap,u_m,u_d);<br />
+        year  		= u_yr;<br />
+        fours		= (year - 1)/4;<br />
+        hundreds 	= (year - 1)/100;<br />
+        four_hundreds 	= (year - 1)/400;<br />
+        da_day = (year + julian_day +fours - hundreds + four_hundreds)%7;<br />
+        <br />
+        printf(&quot;\n\n%d/%d/%d is a  &quot;,u_d,u_m,u_yr);<br />
+        switch(da_day)<br />
+        {<br />
+        case 0 : printf(&quot;Saturday&quot;); break;<br />
+        case 1 : printf(&quot;Sunday  &quot;); break;<br />
+        case 2 : printf(&quot;Monday  &quot;); break;<br />
+        case 3 : printf(&quot;Tuesday &quot;); break;<br />
+        case 4 : printf(&quot;Wednesday&quot;); break;<br />
+        case 5 : printf(&quot;Thursday&quot;); break;<br />
+        case 6 : printf(&quot;Friday&quot;); break;<br />
+        }<br />
+        getch();<br />
+        return (0);<br />
+        }<br />
+        /* 
+        Function to calculate the number of days for julian days<br />
+        3 parameters<br />
+        leap : 0 or 1  indicates whether the yr is leap or not<br />
+        mnth : 0 to 12 the month<br />
+        day  : 0 to 31 the day<br />
+        Returns the julian day number in a given date<br />
+        NB:&lt;Jan 1 of every yr is Julian Day 1, if leap, Dec 31 is Julian Day 366 else 365
+        */<br />
+        <br />
+        int getdays(int leap,int mnth,int day)<br />
+        {<br />
+        int i,jul_days = 0;<br />
+        for(i = 1; i&lt;mnth; i++)<br />
+        {<br />
+        if((i==1)||(i==3)||(i==5)||(i==7)||(i==8)||(i==10)||(i==12))<br />
+        jul_days += 31;<br />
+        else if((i==2)&amp;&amp;(leap==1))<br />
+        jul_days += 29;<br />
+        else if((i==2)&amp;&amp;(leap==0))<br />
+        jul_days += 28;<br />
+        else<br />
+        jul_days += 30;<br />
+        }<br />
+        jul_days += day;<br />
+        return jul_days;<br />
+        }
+      <p align="justify">This is the program in C to know what day a date is.<br />
+          <br />
+          <br /> 
+      
+    </div></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><img src="../../sidebar_btm.jpg" width="151" height="12" /></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#ffffff"><img src="../../../spacer.gif" width="1" height="1200" /></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#9933FF" height="40">
+  <tr height="5">
+    <td class="tablebg"></td>
+  </tr>
+  <tr height="35">
+    <td align="center" valign="top"><div class="footer">| &copy; 2006 Artistik Expressionz. Contact Information available under <a href="#">info</a>.<br />
+    </div></td>
+  </tr>
+</table>
+  </div>
+</body>
+</html>

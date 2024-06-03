@@ -1,0 +1,20 @@
+/*	 CSS for Solutions  (C) Artistik expressionz  November 2005 */
+body,td,th{font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#000000;background-color:#FFFFFF;}
+a{color:#9900FF;text-decoration:none; padding: 10px; border-radius: 5px;}
+a:hover{color:#0099FF;text-decoration:underline;}
+
+.container {
+    max-width: 960px;  margin: 0 auto;
+}
+
+
+.categorylinks LI{PADDING-BOTTOM:10px}
+.categorylinks LI A{DISPLAY:block;FONT-WEIGHT:bold; 
+MARGIN-LEFT:-3px;COLOR:#9933FF;BORDER-BOTTOM:#ececec 1px solid;TEXT-DECORATION:none}
+.categorylinks A:visited{COLOR: #9933FF;}
+.categorylinks A:hover{BACKGROUND: #9900FF; COLOR: #fff; TEXT-DECORATION: none}
+.sublinks{font-size:14px;padding-top:1px;padding-bottom:1px;}
+.content{padding: 0 15px; line-height: 150%; font-size: 16px;}
+.code{font-family:"Courier New", Courier, mono;font-size:16px;color:#333333;font-weight:bold;}
+.input{border:none;border-color:#FFFFFF;border-width:15;}
+h3{font-size:16px;}

@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="tutorials,flash,fireworks,c,c++,javascript,css,html,design" />
+<meta name="author" content="artistik expressionz" />
+<title>Mhkonline Tutorials :: CSS intro</title>
+<link href="../../globalstyle.css" type="text/css" rel="stylesheet" />
+<script language="javascript1.2" src="../../jslib.js"></script>
+<script language="javascript1.2" src="../tuts_index.js"></script>
+<!-- change the sidebarnav & tablebg colors for  each section -->
+<style type="text/css"><!-- .tuts_sidebar a, a.tuts_sidebar:visited {background:#67fe33;} .tablebg{ background:#67fe33;}--></style>
+</head>
+<body>
+<!-- START OF HEADER -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="272"><img src="../tuts_hdr_lft.jpg" alt="Tutorials at Mhkonline" width="272" height="50" /></td>
+    <td width="140" class="tablebg"><img src="../tuts_hdr_css.jpg" alt="Index" width="127" height="50" /></td>
+    <td width="598" class="tablebg"><span style="position:absolute; top:19px; width: 268px;">
+    <h4>Cascading Style Sheet </h4>
+    </span></td>
+  </tr>
+  <tr bgcolor="#e4e4e4"><!-- Breadcrumb Site Navigation -->
+    <td colspan="3" bgcolor="#FBF7F8"><span class="breadCrumb"><a href="../../index2.html">Home </a> &#149; <a href="../../ae/index.html"> ae </a> &#149;<a href="../../downloads/index.html"> Downloads </a> &#149;<a href="../../solutions/index.html">Solutions </a> &#149;<a href="../index.html">Tutorials </a> &#149;<a href="../../info/index.html"> Info</a> &#149;<a href="../list_all_tutorials.html"> All Tutorials</a></a></span></td>
+  </tr>
+</table>
+<!-- END OF HEADER -->
+<table width="780" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="150" valign="top" bgcolor="#9999ff"><img src="../sidebar_top.jpg" width="151" height="12" />
+      <span class="sub_header">Tutorials Navigation</span>
+      <p class="tuts_sidebar"><a href="../c_cpp/index.html">C C++</a><br />
+      <a href="index.html">Css</a><br />
+      <a href="../flash/index.html">Flash</a><br />
+      <a href="../fworks/index.html">Fireworks</a><br />
+      <a href="../javascript/index.html">Javascript      </a></p>
+	  <p><img src="../sidebar_btm.jpg" width="151" height="12" /><img src="../sidebar_top.jpg" width="151" height="12" />
+	      <span class="sub_header">Random Tutorials</span>
+<div id="randTutsBox">		  
+<script language="javascript1.2">
+<!--
+var r = getRandNum(tuts_list.length-1);
+d.write('<h4>' + tuts_list[r].sectionName + '</h4>');
+d.write(tuts_list[r].titleName);
+d.write('<span class=tutsLink><a href=' +  tutsRoot + tuts_list[r].linkVal + '>more...</a></span>');
+-->
+</script></div>
+    </p></td>
+    <td width="630" rowspan="3" valign="top"><div id="tuts_content" style="padding-left:6px">
+      <h3>CSS Introduction</h3>
+        <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Welcome to the tutorials on Cascading Style Sheets at Mhkonline. Scroll to the bottom for all the tutorials. </p>
+        <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;HTML Styles are used to give what shall we say, 'style' to the pages. It is just a set of rules that tell the browser how to present a webpage. Note that HTML tells the browser what to display. There are three ways in which styles can be used.</p>
+		<ul>
+          <li> Inline Styles.</li>
+		  <li> Styles defined in the HEAD section of a page.</li>
+		  <li> Styles defined in an external page, CSS</li>
+        </ul>
+        <p>All these methods are used in different circumstances. <span class="tablebg">Inline Styles</span> are written using the &lt;SPAN&gt; tags. eg:To show this <span style="color:#CCFF00; background-color:#003366;font-weight:bold;">Sample</span> we can use the inline style</p>
+        <table width="90%" border="1" cellspacing="0" cellpadding="0" class="code_outerBorder">
+          <tr>
+            <td class="code_inner">&lt;span style=&quot;color:#CCFF00; background-color:#003366;font-weight:bold;&quot;&gt;Sample&lt;/span&gt;            </td>
+          </tr>
+        </table>
+        <p align="justify">In the other two types, we can name each style and also change the appearance of the standard elements like link colors, styles of Headings etc. Selectors are used to define the designer's own styles. A <span class="tablebg">Class Selector</span> is defined starting with a '.' ,it can be used anywhere, any number of times across the pages it is defined in. On the otherhand, an <span class="tablebg">ID Selector </span>can be used only once in a page, ie, it is unique. It can be implemneted using the &lt;DIV&gt; tag.</p>
+        <table width="90%" border="1" cellspacing="0" cellpadding="0" class="code_outerBorder">
+          <tr>
+            <td class="code_inner"><p>Selector Syntax <br />
+              selector { property1: value1; property2: value2 }</p>
+            <p>Class Selector eg:<br />
+              .footer { font-size:10px; color:#FFFFFF;}<br />
+            &lt;SPAN CLASS=footer&gt;All rights reserved&lt;/SPAN&gt; </p>
+            <p>ID Selector eg:<br />
+              #date{ color:#123456; text-decoration:underline;}<br />
+            &lt;DIV ID=date&gt;1-1-2007&lt;/DIV&gt;</p></td>
+          </tr>
+        </table>
+        <p align="justify">An <span class="tablebg">external style file</span> is called a <span class="tablebg">CSS</span> and is an extremely useful ally to a web designer. It gives him complete control of the look and feel of the entire website. It is particualarly useful when a number of files share the common the same style. So whenever the designer has to change some minor detail, he only has to change it in the common CSS file rather that in each and every document that is used. This is how you link an external style sheet to a webpage by putting this code between the &lt;HEAD&gt; and &lt;/HEAD&gt; tags. </p>
+        <table width="90%" border="1" cellspacing="0" cellpadding="0" class="code_outerBorder">
+          <tr>
+            <td class="code_inner">&lt;link href=&quot;styles.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;</td>
+          </tr>
+        </table>
+        </div></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><img src="../sidebar_btm.jpg" width="151" height="12" /></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#ffffff"><img src="../../spacer.gif" width="10" height="350" /></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#9933FF" height="40">
+  <tr height="5">
+    <td class="tablebg"></td>
+  </tr>
+  <tr height="35">
+    <td align="center" valign="top"><div class="footer">| &copy; 2006 Artistik Expressionz. Contact Information available under <a href="#">info</a>.<br />
+    </div></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="tutorials,flash,fireworks,c,c++,javascript,css,html,design" />
+<meta name="author" content="artistik expressionz" />
+<title>Mhkonline Tutorials :: C C++ index</title>
+<link href="../../../assets/globalstyle.css" type="text/css" rel="stylesheet" />
+<script language="javascript1.2" src="../../../jslib.js"></script>
+<script language="javascript1.2" src="../../tuts_index.js"></script>
+<!-- change the sidebarnav & tablebg colors for  each section -->
+<style type="text/css"><!-- .tuts_sidebar a, a.tuts_sidebar:visited {background:#6699cc;} .tablebg{ background:#6699cc;}--></style>
+</head>
+<body>
+<div class="container">
+  <!-- START OF HEADER -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="272"><img src="../../tuts_hdr_lft.jpg" alt="Tutorials at Mhkonline" width="272" height="50" /></td>
+    <td width="140" class="tablebg"><img src="../../tuts_hdr_ccpp.jpg" alt="Index" width="127" height="50" /></td>
+    <td width="598" class="tablebg"><span style="position:absolute; top:19px; width: 268px;">
+    </span></td>
+  </tr>
+  <tr bgcolor="#e4e4e4"><!-- Breadcrumb Site Navigation -->
+    <td colspan="3" bgcolor="#FBF7F8"><div class="breadCrumb"><a href="../../../index.html">Home </a> &#149; <a href="../../../ae/index.html"> ae </a> &#149;<a href="../../../downloads/index.html"> Downloads </a> &#149;<a href="../../../solutions/index.html">Solutions </a> &#149;<a href="../../index.html">Tutorials </a> &#149;<a href="../../../info/index.html"> Info</a> &#149;<a href="../../list_all_tutorials.html"> All Tutorials </a></a></div></td>
+  </tr>
+</table>
+<!-- END OF HEADER -->
+<table width="780" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="150" valign="top" bgcolor="#9999ff"><img src="../../sidebar_top.jpg" width="151" height="12" />
+      <span class="sub_header">Tutorials Navigation</span>
+      <p class="tuts_sidebar"><a href="../index.html">C C++</a><br />
+      <a href="../../css/index.html">Css</a><br />
+      <a href="../../flash/index.html">Flash</a><br />
+      <a href="../../fworks/index.html">Fireworks</a><br />
+      <a href="../../javascript/index.html">Javascript      </a></p>
+	  <p><img src="../../sidebar_btm.jpg" width="151" height="12" /><img src="../../sidebar_top.jpg" width="151" height="12" />
+	      <span class="sub_header">Random Tutorials</span>
+<div id="randTutsBox">		  
+<script language="javascript1.2">
+<!--
+var r = getRandNum(tuts_list.length-1);
+d.write('<h4>' + tuts_list[r].sectionName + '</h4>');
+d.write(tuts_list[r].titleName);
+d.write('<span class=tutsLink><a href=' +  tutsRoot + tuts_list[r].linkVal + '>more...</a></span>');
+-->
+</script></div>
+    </p></td>
+    <td width="630" rowspan="3" valign="top"><div id="tuts_content" style="padding-left:6px">
+      <h3>Decimal to Hexadecimal</h3>
+      <p><div align="center">
+          <table width="326" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="163" bgcolor="#9900FF" class="footer"><div align="center">Programming Language </div></td>
+              <td width="163" class="tablebg"><div align="center">C</div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">Difficulty</div></td>
+              <td class="tablebg"><div align="center">Intermediate</div></td>
+            </tr>
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">Date Added </div></td>
+              <td class="tablebg"><div align="center">25 Aug 2006 </div></td>
+            </tr>         
+            <tr>
+              <td bgcolor="#9900FF" class="footer"><div align="center">AutoRating(out of 5) </div></td>
+              <td class="tablebg"><div align="center">***</div></td>
+            </tr>
+          </table>
+        </div>&nbsp; </p>
+      <p align="justify">This page will list the program for converting a Decimal number to its corresponding Hexadecimal form.</p>
+      <table width="90%" border="1" cellspacing="0" cellpadding="0" class="code_outerBorder">
+        <tr>
+          <td class="code_inner"><p>/*Program to convert Decimal to Hex<br />
+ Author: Midhun Harikumar<br />
+ Support: <script language="javascript1.2">d.write('<a href='+tutsRoot+'>'+tutsRoot+'</a>');</script>        
+ */</p>
+            <p># include &lt;conio.h&gt;<br />
+              # include &lt;stdio.h&gt;            </p>
+            <p>char itohex(int);</p>
+            <p>int main()<br />
+            {<br /><blockquote>
+              <p>char hex[80],dex[10]; <br />
+                int i=0,deci,tmp,d1,j;<br />
+                float input,mantissa,f1,f2;</p>
+              <p>printf(&quot;Decimal to Hex Converter\n\n&quot;);<br />
+                printf(&quot;Enter a decimal Number ... &quot;);<br />
+                scanf(&quot;%f&quot;,&amp;input);</p>
+              <p>deci = (int)  input;<br />
+                mantissa = input - deci;</p>
+              <p>while(deci&gt;0)<br />
+  {           
+              <blockquote>tmp = deci % 16;<br />
+                deci /= 16;<br />
+                hex[i] = itohex(tmp);
+                <br />
+              i++;</blockquote>
+              </p>
+            }<br />
+            <br />
+            // Mantissa Part<br />
+            <br />
+            f1 = mantissa;<br />
+            for(j=0;j&lt;5;j++)  //for 5 digits after decimal point 
+            <br />
+            {<br />
+            <blockquote>f2 = 16 * f1;<br />
+              d1 = (int)f2;<br />
+            dex[j] = itohex(d1);<br />
+            f1 = f2 - d1;</blockquote>}<br />
+            <br />
+            // Display<br />
+            <br />
+            printf(&quot;The corresponding Hexadecimal value is ... &quot;);<br />
+            for(--i;i&gt;=0;i--)
+            printf(&quot;%c&quot;,hex[i]);<br />
+            printf(&quot;.&quot;);<br />
+            for(j=0;j&lt;5;j++) printf(&quot;%c&quot;,dex[j]);</blockquote>
+            </p> return 0;
+            <p>}</p>
+            <p> //Function that returns character corresponding to a number <br />
+              char itohex(int num)<br />
+              {<br />
+            <blockquote>switch(num)<br />
+            {<blockquote>case 0 : return '0';break;<br />
+            case 1 : return '1';break;<br />
+            case 2 : return '2';break;<br />
+            case 3 : return '3';break;<br />
+case 4 : return '4';break;<br />
+case 5 : return '5';break;<br />
+            case 6 : return '6';break;<br />
+case 7 : return '7';break;<br />
+case 8 : return '8';break;<br />
+case 9 : return '9';break;<br />
+case 10: return 'A';break;<br />
+case 11: return 'B';break;<br />
+            case 12: return 'C';break;<br />
+case 13: return 'D';break;<br />
+case 14: return 'E';break;<br />
+case 15: return 'F';break;<br />
+default: return '0';<br />
+            </blockquote>}
+            </blockquote> }</p></td>
+        </tr>
+      </table>
+      <h3 align="justify">Description </h3>
+      <p align="justify">A decimal integer  is converted to hex by applying repeated division using 16. The modulus values are used to get the hex value. For converting a decimal fraction, ie: to the right of the decimal point, we use repeated multiplication until the required precision is met. The whole number part of these fractions is used for getting the hex for the part after the decimal point.</p>
+      <p align="justify">There are a number of ways in which this program can be implemented. What we have done here is convert the part to the left of the decimal part first to a character array, then convert the decimal part after the decimal point to hex to another array. Since we must use a string to store the hex, we use the function <span class="tablebg">itohex()</span> for getting the hexadecimal equivalent of an integer. </p>
+      <p align="justify">When a float is equated to an integer, the decimal part to the right of the decimal point is lost. This is how we get the integer part from a float. To get the part after the decimal point, subtract the integer part from the original float number. </p>
+      <p align="justify">&nbsp;</p>
+        </div></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><img src="../../sidebar_btm.jpg" width="151" height="12" /></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#ffffff"><img src="../../../spacer.gif" width="1" height="1400" /> </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#9933FF" height="40">
+  <tr height="5">
+    <td class="tablebg"></td>
+  </tr>
+  <tr height="35">
+    <td align="center" valign="top"><div class="footer">| &copy; 2006 Artistik Expressionz. Contact Information available under <a href="#">info</a>.<br />
+    </div></td>
+  </tr>
+</table>
+  </div>
+</body>
+</html>
