@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<HTML xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <HEAD>
+    <b:include data='blog' name='all-head-content'/>
+    <TITLE><data:blog.pageTitle/></TITLE>
+    <b:skin><![CDATA[/*
+-----------------------------------------------
+Blogger Template Style
+Name: 	  Thisaway (Green)
+Designer: Dan Rubin
+URL:      www.superfluousbanter.org
+Date:     29 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+
+/* Variable definitions
+   ====================
+   <Variable name="textColor" description="Text Color"
+             type="color" default="#4b6320" value="#4b6320">
+   <Variable name="blogTitleColor" description="Blog Title Color"
+             type="color" default="#f9feee" value="#f9feee">
+   <Variable name="blogDescriptionColor" description="Blog Description Color"
+             type="color" default="#f9feee" value="#f9feee">
+   <Variable name="postTitleColor" description="Post Title Color"
+             type="color" default="#92ba47" value="#92ba47">
+   <Variable name="dateHeaderColor" description="Date Header Color"
+             type="color" default="#b5c88f" value="#b5c88f">
+   <Variable name="sidebarHeaderColor" description="Sidebar Title Color"
+             type="color" default="#a9bd80" value="#a9bd80">
+   <Variable name="mainLinkColor" description="Link Color"
+             type="color" default="#6a9718" value="#6a9718">
+   <Variable name="mainVisitedLinkColor" description="Visited Link Color"
+             type="color" default="#4d7307" value="#4d7307">
+   <Variable name="sidebarLinkColor" description="Sidebar Link Color"
+             type="color" default="#96c73d" value="#96c73d">
+   <Variable name="sidebarVisitedLinkColor"
+              description="Sidebar Visited Link Color"
+             type="color" default="#6f9d1c" value="#6f9d1c">
+
+   <Variable name="bodyFont" description="Text Font"
+             type="font" default="normal normal 100% Helvetica,Arial,Verdana,'Trebuchet MS', Sans-serif" value="normal normal 100% Helvetica,Arial,Verdana,'Trebuchet MS', Sans-serif">
+   <Variable name="headerFont" description="Sidebar Title Font"
+             type="font"
+             default="normal bold 100% Helvetica,Arial,Verdana,'Trebuchet MS', Sans-serif" value="normal bold 100% Helvetica,Arial,Verdana,'Trebuchet MS', Sans-serif">
+   <Variable name="pageTitleFont" description="Blog Title Font"
+             type="font"
+             default="normal bold 200% Helvetica,Arial,Verdana,'Trebuchet MS', Sans-serif" value="normal bold 200% Helvetica,Arial,Verdana,'Trebuchet MS', Sans-serif">
+   <Variable name="blogDescriptionFont" description="Blog Description Font"
+             type="font"
+             default="normal normal 80% Helvetica,Arial,Verdana,'Trebuchet MS', Sans-serif" value="normal normal 80% Helvetica,Arial,Verdana,'Trebuchet MS', Sans-serif">
+*/
+
+/* global
+----------------------------------------------- */
+body {
+  margin: 0;
+  text-align: center; 
+  min-width: 760px;
+  background: #9dce43 url(http://www.blogblog.com/thisaway_green/bg_body.gif) repeat-x left top;
+  color: $textColor;
+  font-size: small;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 10px 0 10px;
+  border-left: 6px solid #e8f4d3;
+  border-right: 6px solid #e8f4d3;
+  color: $postTitleColor;
+}
+
+code {
+  color: $postTitleColor;
+}
+
+hr {
+  display: none;
+}
+
+
+/* layout
+----------------------------------------------- */
+#outer-wrapper {
+  margin: 0 auto;
+  width: 760px;
+  text-align: left;
+  font: $bodyFont;
+}
+
+#header-wrapper {
+  padding-bottom: 15px;
+  background: url(http://www.blogblog.com/thisaway_green/bg_header_bottom.gif) no-repeat left bottom;
+}
+
+#header {
+  background: #4b6320 url(http://www.blogblog.com/thisaway_green/bg_header.gif) repeat-x left bottom;
+}
+
+#content-wrapper {
+  position: relative;
+  width: 760px;
+  background: #f7f0e9 url(http://www.blogblog.com/thisaway_green/bg_main_wrapper.gif) repeat-y left top;
+}
+
+#main-wrapper {
+  display: inline; /* fixes a strange ie margin bug */
+  float: left;
+  margin: 0 0 0 3px;
+  padding: 0;
+  width: 483px;
+  word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+  overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+
+#main {
+  padding: 22px 8px 0 8px;
+  background: url(http://www.blogblog.com/thisaway_green/bg_content.gif) repeat-x left top;
+}
+
+.post {
+  margin: 0 8px 14px 21px;
+  padding: 0;
+  border-bottom: 3px solid #e8f4d3;
+}
+
+#comments {
+  margin: 0 16px 14px 29px;
+  padding: 10px;
+  border: 1px solid #e4f0ce;
+  background-color: #eff5e4;
+}
+
+#sidebar-wrapper {
+  display: inline; /* fixes a strange ie margin bug */
+  float: right;
+  margin: 0 3px 0 0;
+  width: 269px;
+  color: $textColor;
+  line-height: 1.4em;
+  font-size: 90%;
+  background: url(http://www.blogblog.com/thisaway_green/bg_sidebar.gif) repeat-x left top;
+  word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+  overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+
+#sidebar {
+  padding: 7px 11px 0 14px;
+  background: url(http://www.blogblog.com/thisaway_green/bg_sidebar_arrow.gif) repeat-y 179px 0;
+}
+
+#sidebar .widget { 
+  margin-bottom: 20px;
+ }
+
+
+#footer-wrapper {
+  padding-top: 15px;
+  background: url(http://www.blogblog.com/thisaway_green/bg_footer_top.gif) no-repeat left top;
+  clear: both;
+}
+
+#footer {
+  background: #374915 url(http://www.blogblog.com/thisaway_green/bg_footer.gif) repeat-x left top;
+  text-align: center;
+  min-height: 2em;
+}
+
+/* headings
+----------------------------------------------- */
+
+#header h1 {
+  margin: 0;
+  padding: 24px 0 0 84px;
+  background: url(http://www.blogblog.com/thisaway_green/icon_header.gif) no-repeat 16px 26px;
+}
+
+h2.date-header {
+  margin: 0;
+  padding: 0 0 0 29px;
+  text-transform: uppercase;
+  color: $dateHeaderColor;
+  background: url(http://www.blogblog.com/thisaway_green/icon_date.gif) no-repeat 13px 0;
+  font-size: 80%;
+  font-weight: normal;
+}
+
+.date-header span {
+  margin: 0 0 0 5px;
+  padding: 0 25px 0 25px;
+  background: url(http://www.blogblog.com/thisaway_green/bg_date.gif) no-repeat 0 0;
+}
+
+.sidebar h2 {
+  padding: 1px 0 0 36px;
+  color: $sidebarHeaderColor;
+  background: url(http://www.blogblog.com/thisaway_green/icon_sidebar_heading.gif) no-repeat 0 45%;
+  font: $headerFont;
+}
+
+.sidebar .Profile h2 {
+  color: #809552;
+  background: url(http://www.blogblog.com/thisaway_green/icon_sidebar_profileheading.gif) no-repeat 0 45%;
+}
+
+.post h3 {
+  margin: 13px 0 13px 0;
+  padding: 0;
+  color: $postTitleColor;
+  font-size: 140%;
+}
+
+.post h3 a, .post h3 a:visited { 
+  color: $postTitleColor;
+ }
+
+#comments h4 {
+  margin-top: 0;
+  font-size: 120%;
+}
+
+
+/* text
+----------------------------------------------- */
+
+#header h1 {
+  color: $blogTitleColor;
+  font: $pageTitleFont;
+}
+
+#header .description {
+  margin: 0;
+  padding: 7px 16px 0 84px;
+  color: $blogDescriptionColor;
+  font: $blogDescriptionFont;
+}
+
+.post-body p {
+  line-height: 1.4em;
+  /* Fix bug in IE5/Win with italics in posts */
+  margin: 0;
+  height: 1%;
+  overflow: visible;
+}
+
+.post-footer {
+  font-size: 80%;
+  color: $dateHeaderColor;
+}
+
+.uncustomized-post-template .post-footer {
+  text-align: right;
+}
+
+.uncustomized-post-template .post-footer .post-author,
+.uncustomized-post-template .post-footer .post-timestamp {
+  display: block;
+  float: left;
+  text-align: left;
+  margin-right: 4px;
+}
+
+p.comment-author {
+  font-size: 83%;
+}
+
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+}
+
+.comment-body p {
+  line-height: 1.4em;
+}
+
+.feed-links { 
+  clear: both;
+  line-height: 2.5em;
+  margin-bottom: 0.5em;
+  margin-left: 29px;
+}
+
+#footer .widget { 
+  margin: 0;
+  padding: 0 0 15px 55px;
+  color: #f9feee;
+  font-size: 90%;
+  line-height: 1.4em;
+  background: url(http://www.blogblog.com/thisaway_green/icon_footer.gif) no-repeat 16px 0;
+}
+
+
+/* lists
+----------------------------------------------- */
+
+.post ul {
+  padding-left: 32px;
+  list-style-type: none;
+  line-height: 1.4em;
+}
+
+.post li {
+  padding: 0 0 4px 17px;
+  background: url(http://www.blogblog.com/thisaway_green/icon_list_item.gif) no-repeat 0 3px;
+}
+
+#comments ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#comments li {
+  padding: 0 0 1px 17px;
+  background: url(http://www.blogblog.com/thisaway_green/icon_comment.gif) no-repeat 0 3px;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style-type: none;
+  line-height: 1.2em;
+  margin-left: 0;
+}
+
+.sidebar li {
+  padding: 0 0 4px 17px;
+  background: url(http://www.blogblog.com/thisaway_green/icon_list_item.gif) no-repeat 0 3px;
+}
+
+#blog-pager-newer-link {
+  float: left;
+  margin-left: 29px;
+ }
+ 
+#blog-pager-older-link {
+  float: right;
+  margin-right: 16px;
+ }
+ 
+#blog-pager {   
+  text-align: center; 
+ }
+
+/* links
+----------------------------------------------- */
+a {
+  color: $mainLinkColor;
+  font-weight: bold;
+}
+
+a:hover {
+  color: $mainVisitedLinkColor;
+}
+
+a.comment-link {
+/* ie5.0/win doesn't apply padding to inline elements,
+   so we hide these two declarations from it */
+  background/* */:/**/url(http://www.blogblog.com/thisaway_green/icon_comment.gif) no-repeat 0 45%;
+  padding-left: 14px;
+}
+
+html>body a.comment-link {
+  /* respecified, for ie5/mac's benefit */
+  background: url(http://www.blogblog.com/thisaway_green/icon_comment.gif) no-repeat 0 45%;
+  padding-left: 14px;
+}
+
+.sidebar a {
+  color: $sidebarLinkColor;
+}
+
+.sidebar a:hover {
+  color: $sidebarVisitedLinkColor;
+}
+
+
+#header h1 a {
+  color: #f9feee;
+  text-decoration: none;
+}
+
+#header h1 a:hover {
+  color: #cdd9b4;
+}
+
+.post h3 a {
+  text-decoration: none;
+}
+
+a img { 
+ border-width: 0;
+}
+
+.clear {
+  clear: both;
+  line-height: 0;
+  height: 0;
+}
+
+.profile-textblock { 
+  clear: both;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+.profile-img { 
+  float: left;
+  margin: 0 5px 5px 0;
+  padding: 3px;
+  border: 1px solid #dbebbd;
+}
+
+.profile-link { 
+  padding: 0 0 0 17px;
+  background: url(http://www.blogblog.com/thisaway_green/icon_profile.gif) no-repeat 0 0;
+}
+
+/** Page structure tweaks for layout editor wireframe */
+
+body#layout #main,
+body#layout #sidebar { 
+  padding: 0;
+}
+]]></b:skin>
+  </head>
+
+  <BODY>
+  <DIV id='outer-wrapper'><DIV id='wrap2'>
+
+    <!-- skip links for text browsers -->
+    <SPAN id='skiplinks' style='display:none;'>
+      <A href='#main'>skip to main </A> |
+      <A href='#sidebar'>skip to sidebar</A>
+    </SPAN>
+
+    <DIV id='header-wrapper'>
+      <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
+<b:widget id='Header1' locked='true' title='Software Tutorials (Header)' type='Header'>
+<b:includable id='main'>
+
+  <b:if cond='data:useImage'>
+    <b:if cond='data:imagePlacement == "REPLACE"'>
+      <!--Show just the image, no text-->
+      <DIV id='header-inner'>
+        <A expr:href='data:blog.homepageUrl' style='display: block'>
+          <IMG expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + "_headerimg"' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/>
+        </A>
+      </DIV>
+    <b:else/>
+      <!--Show image as background to text-->
+      <DIV expr:style='"background-image: url(\"" + data:sourceUrl + "\"); "                      + "background-repeat: no-repeat; "                      + "width: " + data:width + "px; "                      + "height: " + data:height + "px;"' id='header-inner'>
+        <DIV class='titlewrapper' style='background: transparent'>
+          <H1 class='title' style='background: transparent; border-width: 0px'>
+            <b:if cond='data:blog.url == data:blog.homepageUrl'>
+              <data:title/>
+            <b:else/>
+              <A expr:href='data:blog.homepageUrl'><data:title/></A>
+            </b:if>
+          </H1>
+        </DIV>
+        <DIV class='descriptionwrapper'>
+          <P class='description'><SPAN><data:description/></SPAN></P>
+        </DIV>
+      </DIV>
+    </b:if>
+  <b:else/>
+    <!--No header image -->
+    <DIV id='header-inner'>
+      <DIV class='titlewrapper'>
+        <H1 class='title'>
+          <b:if cond='data:blog.url == data:blog.homepageUrl'>
+            <data:title/>
+          <b:else/>
+            <A expr:href='data:blog.homepageUrl'><data:title/></A>
+          </b:if>
+        </H1>
+      </DIV>
+      <DIV class='descriptionwrapper'>
+        <P class='description'><SPAN><data:description/></SPAN></P>
+      </DIV>
+    </DIV>
+  </b:if>
+</b:includable>
+</b:widget>
+</b:section>
+    </DIV>
+ 
+    <DIV id='content-wrapper'>
+
+      <DIV id='crosscol-wrapper' style='text-align:center'>
+        <b:section class='crosscol' id='crosscol' showaddelement='no'/>
+      </DIV>
+
+      <DIV id='main-wrapper'>
+        <b:section class='main' id='main' showaddelement='no'>
+<b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
+<b:includable id='main' var='top'>
+  <!-- posts -->
+  <DIV class='blog-posts hfeed'>
+
+    <b:include data='top' name='status-message'/>
+
+    <data:adStart/>
+    <b:loop values='data:posts' var='post'>
+      <b:if cond='data:post.dateHeader'>
+        <H2 class='date-header'><data:post.dateHeader/></H2>
+      </b:if>
+      <b:include data='post' name='post'/>
+      <b:if cond='data:blog.pageType == "item"'>
+        <b:include data='post' name='comments'/>
+      </b:if>
+      <b:if cond='data:post.includeAd'>
+        <data:adEnd/>
+        <data:adCode/>
+        <data:adStart/>
+      </b:if>
+    </b:loop>
+    <data:adEnd/>
+  </DIV>
+
+  <!-- navigation -->
+  <b:include name='nextprev'/>
+
+  <!-- feed links -->
+  <b:include name='feedLinks'/>
+</b:includable>
+<b:includable id='nextprev'>
+  <DIV class='blog-pager' id='blog-pager'>
+    <b:if cond='data:newerPageUrl'>
+      <SPAN id='blog-pager-newer-link'>
+      <A class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + "_blog-pager-newer-link"' expr:title='data:newerPageTitle'><data:newerPageTitle/></A>
+      </SPAN>
+    </b:if>
+
+    <b:if cond='data:olderPageUrl'>
+      <SPAN id='blog-pager-older-link'>
+      <A class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + "_blog-pager-older-link"' expr:title='data:olderPageTitle'><data:olderPageTitle/></A>
+      </SPAN>
+    </b:if>
+
+    <b:if cond='data:blog.homepageUrl != data:blog.url'>
+      <A class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></A>
+      <b:else/>
+      <b:if cond='data:newerPageUrl'>
+        <A class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></A>
+      </b:if>
+    </b:if>
+
+  </DIV>
+  <DIV class='clear'/>
+</b:includable>
+<b:includable id='post' var='post'>
+  <DIV class='post hentry uncustomized-post-template'>
+    <A expr:name='data:post.id'/>
+    <b:if cond='data:post.title'>
+      <H3 class='post-title entry-title'>
+     <b:if cond='data:post.link'>
+       <A expr:href='data:post.link'><data:post.title/></A>
+     <b:else/>
+        <b:if cond='data:post.url'>
+          <A expr:href='data:post.url'><data:post.title/></A>
+        <b:else/>
+          <data:post.title/>
+        </b:if>
+     </b:if>
+      </H3>
+    </b:if>
+
+    <DIV class='post-header-line-1'/>
+
+    <DIV class='post-body entry-content'>
+      <P><data:post.body/></P>
+      <DIV style='clear: both;'/> <!-- clear for photos floats -->
+    </DIV>
+    <DIV class='post-footer'>
+    <P class='post-footer-line post-footer-line-1'>
+      <SPAN class='post-author vcard'>
+        <b:if cond='data:top.showAuthor'>
+          <data:top.authorLabel/>
+          <SPAN class='fn'><data:post.author/></SPAN>
+        </b:if>
+      </SPAN>
+
+      <SPAN class='post-timestamp'>
+        <b:if cond='data:top.showTimestamp'>
+          <data:top.timestampLabel/>
+        <b:if cond='data:post.url'>
+          <A class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><ABBR class='published' expr:title='data:post.timestampISO8601'><data:post.timestamp/></ABBR></A>
+        </b:if>
+        </b:if>
+      </SPAN>
+
+      <SPAN class='post-comment-link'>
+        <b:if cond='data:blog.pageType != "item"'>
+
+          <b:if cond='data:post.allowComments'>
+            <A class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 1'>1 <data:top.commentLabel/><b:else/><data:post.numComments/> <data:top.commentLabelPlural/></b:if></A>
+          </b:if>
+        </b:if>
+      </SPAN>
+
+       <!-- backlinks -->
+       <SPAN class='post-backlinks post-comment-link'>
+         <b:if cond='data:blog.pageType != "item"'>
+           <b:if cond='data:post.showBacklinks'>
+             <A class='comment-link' expr:href='data:post.url + "#links"'><data:top.backlinkLabel/></A>
+           </b:if>
+         </b:if>
+       </SPAN>
+
+      <SPAN class='post-icons'>
+        <!-- email post links -->
+        <b:if cond='data:post.emailPostUrl'>
+          <SPAN class='item-action'>
+          <A expr:href='data:post.emailPostUrl' expr:title='data:top.emailPostMsg'>
+            <SPAN class='email-post-icon'>&#160;</SPAN>
+          </A>
+          </SPAN>
+        </b:if>
+
+        <!-- quickedit pencil -->
+        <b:include data='post' name='postQuickEdit'/>
+      </SPAN>
+      </P>
+
+      <P class='post-footer-line post-footer-line-2'>
+      <SPAN class='post-labels'>
+        <b:if cond='data:post.labels'>
+          <data:postLabelsLabel/>
+          <b:loop values='data:post.labels' var='label'>
+            <A expr:href='data:label.url' rel='tag'><data:label.name/></A><b:if cond='data:label.isLast != "true"'>,</b:if>
+          </b:loop>
+        </b:if>
+      </SPAN>
+      </P>
+
+      <P class='post-footer-line post-footer-line-3'/>
+    </DIV>
+  </DIV>
+</b:includable>
+<b:includable id='postQuickEdit' var='post'>
+  <b:if cond='data:post.editUrl'>
+    <SPAN expr:class='"item-control " + data:post.adminClass'>
+      <A expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'>
+        <SPAN class='quick-edit-icon'>&#160;</SPAN>
+      </A>
+    </SPAN>
+  </b:if>
+</b:includable>
+<b:includable id='commentDeleteIcon' var='comment'>
+  <SPAN expr:class='"item-control " + data:comment.adminClass'>
+    <A expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'>
+      <SPAN class='delete-comment-icon'>&#160;</SPAN>
+    </A>
+  </SPAN>
+</b:includable>
+<b:includable id='backlinkDeleteIcon' var='backlink'>
+  <SPAN expr:class='"item-control " + data:backlink.adminClass'>
+    <A expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'>
+      <SPAN class='delete-comment-icon'>&#160;</SPAN>
+    </A>
+  </SPAN>
+</b:includable>
+<b:includable id='comments' var='post'>
+  <DIV class='comments' id='comments'>
+    <A name='comments'/>
+    <b:if cond='data:post.allowComments'>
+      <H4>
+        <b:if cond='data:post.numComments == 1'>
+          1 <data:commentLabel/>:
+        <b:else/>
+          <data:post.numComments/> <data:commentLabelPlural/>:
+        </b:if>
+      </H4>
+
+      <DL id='comments-block'>
+        <b:loop values='data:post.comments' var='comment'>
+          <DT class='comment-author' expr:id='"comment-" + data:comment.id'>
+            <A expr:name='"comment-" + data:comment.id'/>
+            <b:if cond='data:comment.authorUrl'>
+              <A expr:href='data:comment.authorUrl' rel='nofollow'><data:comment.author/></A>
+            <b:else/>
+              <data:comment.author/>
+            </b:if>
+            <data:commentPostedByMsg/>
+          </DT>
+          <DD class='comment-body'>
+            <b:if cond='data:comment.isDeleted'>
+              <SPAN class='deleted-comment'><data:comment.body/></SPAN>
+            <b:else/>
+              <P><data:comment.body/></P>
+            </b:if>
+          </DD>
+          <DD class='comment-footer'>
+            <SPAN class='comment-timestamp'>
+              <A expr:href='"#comment-" + data:comment.id' title='comment permalink'>
+                <data:comment.timestamp/>
+              </A>
+              <b:include data='comment' name='commentDeleteIcon'/>
+            </SPAN>
+          </DD>
+        </b:loop>
+      </DL>
+
+      <P class='comment-footer'>
+        <A expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:postCommentMsg/></A>
+      </P>
+    </b:if>
+
+    <DIV id='backlinks-container'>
+    <DIV expr:id='data:widget.instanceId + "_backlinks-container"'>
+       <b:if cond='data:post.showBacklinks'>
+         <b:include data='post' name='backlinks'/>
+       </b:if>
+    </DIV>
+    </DIV>
+  </DIV>
+</b:includable>
+<b:includable id='backlinks' var='post'>
+  <A name='links'/><H4><data:post.backlinksLabel/></H4>
+  <b:if cond='data:post.numBacklinks != 0'>
+    <DL class='comments-block' id='comments-block'>
+      <b:loop values='data:post.backlinks' var='backlink'>
+        <DIV class='collapsed-backlink backlink-control'>
+          <DT class='comment-title'> 
+            <SPAN class='backlink-toggle-zippy'>&#160;</SPAN>
+            <A expr:href='data:backlink.url' rel='nofollow'><data:backlink.title/></A>
+            <b:include data='backlink' name='backlinkDeleteIcon'/>
+          </DT>
+          <DD class='comment-body collapseable'>
+            <data:backlink.snippet/>
+          </DD>
+          <DD class='comment-footer collapseable'>
+            <SPAN class='comment-author'><data:post.authorLabel/> <data:backlink.author/></SPAN>
+            <SPAN class='comment-timestamp'><data:post.timestampLabel/> <data:backlink.timestamp/></SPAN>
+          </DD>
+        </DIV>
+      </b:loop>
+    </DL>
+  </b:if>
+  <P class='comment-footer'>
+    <A class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + "_backlinks-create-link"' target='_blank'><data:post.createLinkLabel/></A>
+  </P>
+</b:includable>
+<b:includable id='feedLinks'>
+  <b:if cond='data:blog.pageType != "item"'> <!-- Blog feed links -->
+    <b:if cond='data:feedLinks'>
+      <DIV class='blog-feeds'>
+        <b:include data='feedLinks' name='feedLinksBody'/>
+      </DIV>
+    </b:if>
+
+    <b:else/> <!--Post feed links -->
+    <DIV class='post-feeds'>
+      <b:loop values='data:posts' var='post'>
+        <b:if cond='data:post.allowComments'>
+          <b:if cond='data:post.feedLinks'>
+            <b:include data='post.feedLinks' name='feedLinksBody'/>
+          </b:if>
+        </b:if>
+      </b:loop>
+    </DIV>
+  </b:if>
+</b:includable>
+<b:includable id='feedLinksBody' var='links'>
+  <DIV class='feed-links'>
+  <data:feedLinksMsg/>
+  <b:loop values='data:links' var='f'>
+     <A class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</A>
+  </b:loop>
+  </DIV>
+</b:includable>
+<b:includable id='status-message'>
+  <b:if cond='data:navMessage'>
+  <DIV class='status-msg-wrap'>
+    <DIV class='status-msg-body'>
+      <data:navMessage/>
+    </DIV>
+    <DIV class='status-msg-border'>
+      <DIV class='status-msg-bg'>
+        <DIV class='status-msg-hidden'><data:navMessage/></DIV>
+      </DIV>
+    </DIV>
+  </DIV>
+  <DIV style='clear: both;'/>
+  </b:if>
+</b:includable>
+</b:widget>
+</b:section>
+      </DIV>
+
+      <DIV id='sidebar-wrapper'>
+        <b:section class='sidebar' id='sidebar' preferred='yes'>
+<b:widget id='AdSense1' locked='false' title='' type='AdSense'>
+<b:includable id='main'>
+  <DIV class='widget-content'>
+    <data:adCode/>
+  </DIV>
+</b:includable>
+</b:widget>
+<b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
+<b:includable id='main'>
+  <b:if cond='data:title'>
+    <H2><data:title/></H2>
+  </b:if>
+  <DIV class='widget-content'>
+  <DIV id='ArchiveList'>
+  <DIV expr:id='data:widget.instanceId + "_ArchiveList"'>
+    <b:if cond='data:style == "HIERARCHY"'>
+     <b:include data='data' name='interval'/>
+    </b:if>
+    <b:if cond='data:style == "FLAT"'>
+      <b:include data='data' name='flat'/>
+    </b:if>
+    <b:if cond='data:style == "MENU"'>
+      <b:include data='data' name='menu'/>
+    </b:if>
+  </DIV>
+  </DIV>
+  <b:include name='quickedit'/>
+  </DIV>
+</b:includable>
+<b:includable id='flat' var='data'>
+  <UL>
+    <b:loop values='data:data' var='i'>
+      <LI class='archivedate'>
+        <A expr:href='data:i.url'><data:i.name/></A> (<data:i.post-count/>)
+      </LI>
+    </b:loop>
+  </UL>
+</b:includable>
+<b:includable id='menu' var='data'>
+  <SELECT expr:id='data:widget.instanceId + "_ArchiveMenu"'>
+    <OPTION value=''><data:title/></OPTION>
+    <b:loop values='data:data' var='i'>
+      <OPTION expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</OPTION>
+    </b:loop>
+  </SELECT>
+</b:includable>
+<b:includable id='interval' var='intervalData'>
+  <b:loop values='data:intervalData' var='i'>
+      <UL>
+        <LI expr:class='"archivedate " + data:i.expclass'>
+          <b:include data='i' name='toggle'/>
+          <A class='post-count-link' expr:href='data:i.url'><data:i.name/></A>
+            (<SPAN class='post-count'><data:i.post-count/></SPAN>)
+          <b:if cond='data:i.data'>
+            <b:include data='i.data' name='interval'/>
+          </b:if>
+          <b:if cond='data:i.posts'>
+            <b:include data='i.posts' name='posts'/>
+          </b:if>
+        </LI>
+      </UL>
+  </b:loop>
+</b:includable>
+<b:includable id='toggle' var='interval'>
+  <b:if cond='data:interval.toggleId'>
+  <b:if cond='data:interval.expclass == "expanded"'>
+    <A class='toggle' expr:href='data:widget.actionUrl + "&amp;action=toggle" +       "&amp;dir=close&amp;toggle=" + data:interval.toggleId +       "&amp;toggleopen=" + data:toggleopen'>
+        <SPAN class='zippy toggle-open'>&#9660; </SPAN>
+    </A>
+  <b:else/>
+    <A class='toggle' expr:href='data:widget.actionUrl + "&amp;action=toggle" +         "&amp;dir=open&amp;toggle=" + data:interval.toggleId +         "&amp;toggleopen=" + data:toggleopen'>
+          <SPAN class='zippy'>&#9658; </SPAN>
+    </A>
+  </b:if>
+ </b:if>
+</b:includable>
+<b:includable id='posts' var='posts'>
+  <UL class='posts'>
+    <b:loop values='data:posts' var='i'>
+      <LI><A expr:href='data:i.url'><data:i.title/></A></LI>
+    </b:loop>
+  </UL>
+</b:includable>
+</b:widget>
+<b:widget id='Profile1' locked='false' title='About Me' type='Profile'>
+<b:includable id='main'>
+    <b:if cond='data:title != ""'>
+      <H2><data:title/></H2>
+    </b:if>
+    <DIV class='widget-content'>
+    <b:if cond='data:team == "true"'> <!-- team blog profile -->
+      <UL>
+        <b:loop values='data:authors' var='i'>
+          <LI><A expr:href='data:i.userUrl'><data:i.display-name/></A></LI>
+        </b:loop>
+      </UL>
+
+      <b:else/> <!-- normal blog profile -->
+
+      <b:if cond='data:photo.url != ""'>
+        <A expr:href='data:userUrl'><IMG class='profile-img' expr:alt='data:photo.alt' expr:height='data:photo.height' expr:src='data:photo.url' expr:width='data:photo.width'/></A>
+      </b:if>
+
+      <DL class='profile-datablock'>
+        <DT class='profile-data'><data:displayname/></DT>
+
+        <b:if cond='data:showlocation == "true"'>
+          <DD class='profile-data'><data:location/></DD>
+        </b:if>
+
+        <b:if cond='data:aboutme != ""'><DD class='profile-textblock'><data:aboutme/></DD></b:if>
+      </DL>
+      <A class='profile-link' expr:href='data:userUrl'><data:viewProfileMsg/></A>
+    </b:if>
+
+     <b:include name='quickedit'/>
+    </DIV>
+  </b:includable>
+</b:widget>
+</b:section>
+      </DIV>
+
+      <!-- spacer for skins that want sidebar and main to be the same height-->
+      <DIV class='clear'>&#160;</DIV>
+
+    </DIV> <!-- end content-wrapper -->
+
+    <DIV id='footer-wrapper'>
+      <b:section class='footer' id='footer'/>
+    </DIV>
+
+  </DIV></DIV> <!-- end outer-wrapper -->
+</BODY>
+</HTML>
