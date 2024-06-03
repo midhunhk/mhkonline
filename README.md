@@ -1,4 +1,5 @@
 # mhkonline
+<img src="https://raw.githubusercontent.com/midhunhk/mhkonline/main/source/graphics/site_icon.png" alt="icon" /> 
 An archived copy of my personal website created back in 2005-2006 and was hosted on GeoCities.com.  
 
 _It was a pain to upload few files at a time using file browser over dial up internet connection._
@@ -31,5 +32,27 @@ Since the Flash player is no longer supported by modern browsers, for aesthetic 
 - Macromedia DreamWeaver
 - Macromedia Flash
 
-## MIT License
+## License
 Uploaded to GitHub under MIT license for historical maintanence of the code
+
+MIT License
+
+Copyright (c) 2024 Midhun Harikumar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
