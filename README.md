@@ -1,6 +1,6 @@
 # mhkonline
 <img src="https://raw.githubusercontent.com/midhunhk/mhkonline/main/source/graphics/site_icon.png" alt="icon" /> 
-An archived copy of my personal website created back in 2005-2006 and was hosted on GeoCities.com.  
+An **archived** copy of my personal website created back in 2005-2006 and was hosted on GeoCities.com.  
 
 _It was a pain to upload only few files at a time using file browser over dial up internet connection._
 
